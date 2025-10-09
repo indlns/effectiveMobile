@@ -6,6 +6,24 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D430912A2E96F9F700F5E27F /* PinLayout in Frameworks */ = {isa = PBXBuildFile; productRef = D43091292E96F9F700F5E27F /* PinLayout */; };
+		D4C0E1F82E959230009CCB9E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = D4C0E1F72E959230009CCB9E /* SnapKit */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D4C0E1FC2E959307009CCB9E /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D4A0AB872E956D0D001B93EF /* todoapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = todoapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -14,7 +32,7 @@
 		D4A0AB9C2E956D0E001B93EF /* Exceptions for "todoapp" folder in "todoapp" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Application/Info.plist,
 			);
 			target = D4A0AB862E956D0D001B93EF /* todoapp */;
 		};
@@ -36,6 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D430912A2E96F9F700F5E27F /* PinLayout in Frameworks */,
+				D4C0E1F82E959230009CCB9E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +88,7 @@
 				D4A0AB832E956D0D001B93EF /* Sources */,
 				D4A0AB842E956D0D001B93EF /* Frameworks */,
 				D4A0AB852E956D0D001B93EF /* Resources */,
+				D4C0E1FC2E959307009CCB9E /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -78,6 +99,8 @@
 			);
 			name = todoapp;
 			packageProductDependencies = (
+				D4C0E1F72E959230009CCB9E /* SnapKit */,
+				D43091292E96F9F700F5E27F /* PinLayout */,
 			);
 			productName = todoapp;
 			productReference = D4A0AB872E956D0D001B93EF /* todoapp.app */;
@@ -107,6 +130,10 @@
 			);
 			mainGroup = D4A0AB7E2E956D0D001B93EF;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D4C0E1F62E959230009CCB9E /* XCRemoteSwiftPackageReference "SnapKit" */,
+				D43091282E96F9F700F5E27F /* XCRemoteSwiftPackageReference "PinLayout" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D4A0AB882E956D0D001B93EF /* Products */;
 			projectDirPath = "";
@@ -147,10 +174,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PZFHJR9YRZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = todoapp/Info.plist;
+				INFOPLIST_FILE = todoapp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -179,10 +205,9 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = PZFHJR9YRZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = todoapp/Info.plist;
+				INFOPLIST_FILE = todoapp/Application/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -345,6 +370,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D43091282E96F9F700F5E27F /* XCRemoteSwiftPackageReference "PinLayout" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/layoutBox/PinLayout";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.10.6;
+			};
+		};
+		D4C0E1F62E959230009CCB9E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D43091292E96F9F700F5E27F /* PinLayout */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D43091282E96F9F700F5E27F /* XCRemoteSwiftPackageReference "PinLayout" */;
+			productName = PinLayout;
+		};
+		D4C0E1F72E959230009CCB9E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D4C0E1F62E959230009CCB9E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D4A0AB7F2E956D0D001B93EF /* Project object */;
 }
