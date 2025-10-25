@@ -69,7 +69,7 @@ class ToDoListCell: UITableViewCell {
     public func configure(with todos: ToDoModel) {
         descriptionLabel.text = todos.todo
         dateLabel.text = "11/11/11"
-        setupCompletedToDo(completed: todos.completed, text: "Хуй")
+        setupCompletedToDo(completed: todos.completed, text: "Task")
     }
     
     private func setupCompletedToDo(completed: Bool, text: String) {
